@@ -1,0 +1,19 @@
+#container_lista {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    align-items: center;
+}
+
+button {
+    width: 150px;
+    border-radius: 6px;
+}
