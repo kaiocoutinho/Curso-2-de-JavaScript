@@ -1,20 +1,10 @@
 function adicionar() {
-    var lista = [];
-    var itensLista = document.querySelector('#produtos');
-    lista.pop(itensLista);
-    if (itensLista == '') {
-        alert('Informe os valores corretos.')
-    } else {
-        var criarLista = document.querySelector('#lista');
-        var novaLista = document.createElement('li');
-        novaLista.appendChild(document.createTextNode(lista));
-        criarLista.appendChild(novaLista)
-     
-        
-        
-    }
-
-
-
-
-}
+    var input = document.querySelector('#itemLista');
+    var input2 = String(input.value)
+    var pai = document.querySelector('#container_lista')
+    var ul = document.createElement('ul');
+    var li = document.createElement('li');
+    ul.appendChild(li);
+    li.innerHTML = `${input2}`
+    pai.appendChild(li);
+}       
